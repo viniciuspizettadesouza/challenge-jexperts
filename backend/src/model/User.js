@@ -35,7 +35,7 @@ const UserSchema = new Schema({
         required: true,
         lowercase: true,
     },
-    superior_cpf: {
+    superior: {
         type: String,
         lowercase: true,
     },
