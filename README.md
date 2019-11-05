@@ -20,6 +20,10 @@ Desenvolver uma aplicação que contenha os seguintes requisitos:
 
 A aplicação pode ser realizada em tecnologia de sua escolha (Web, Desktop, Linguagem, Banco de dados).
 
+## Layout da aplicação
+
+<img src="frontend/src/assets/jexperts.png" width="400">
+
 ## Para rodar a aplicação
 
 Após clonar o repositório do github, executar um dos comandos abaixo para carregar os modulos do node dentro da pasta do frontend.
