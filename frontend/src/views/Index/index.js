@@ -1,11 +1,11 @@
-import React from 'react';
-import './index.css';
+import React from 'react'
+import './index.css'
 
 export default function Login({ history }) {
 
     async function handleAccount(e) {
-        e.preventDefault();
-        history.push(`/add-user`);
+        e.preventDefault()
+        history.push(`/register`)
     }
 
     return (
@@ -16,5 +16,5 @@ export default function Login({ history }) {
                 </form>
             </div>
         </div>
-    );
+    )
 }
