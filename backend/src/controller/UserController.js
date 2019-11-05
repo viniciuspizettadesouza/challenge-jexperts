@@ -7,7 +7,6 @@ module.exports = {
         const users = await User.find({ user: user_id })
         return res.json(users)
     },
-
     async store(req, res) {
         try {
             const newUser = await User.create(req.body);

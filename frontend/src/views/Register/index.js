@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './index.css'
+import './register.css'
 
 import api from '../../services/api'
 
@@ -12,13 +12,14 @@ export default function Login({ history }) {
     const [password, setPassword] = useState('')
     const [cpf, setCpf] = useState('')
     const [superior, setSuperior] = useState('')
-    const [address, setAddress] = useState('')
+    //const [address, setAddress] = useState('')
 
     async function handleSubmit(e) {
         e.preventDefault()
 
-        await api.post('/add-user', {
-            name, telephone, email
+        await api.post('/store-user', {
+            name, email, telephone, position, login, password, cpf, superior
+
         })
         history.push(`/`)
     }
@@ -46,42 +47,36 @@ export default function Login({ history }) {
                         onChange={e => setTelephone(e.target.value)}
                     />
                     <input
-                        type="position"
+                        type="text"
                         placeholder="position"
                         value={position}
                         onChange={e => setPosition(e.target.value)}
                     />
                     <input
-                        type="login"
-                        placeholder="login"
+                        type="text"
+                        placeholder="Login"
                         value={login}
                         onChange={e => setLogin(e.target.value)}
                     />
                     <input
                         type="password"
-                        placeholder="password"
+                        placeholder="Password"
                         value={password}
                         onChange={e => setPassword(e.target.value)}
                     />
                     <input
-                        type="cpf"
-                        placeholder="cpf"
+                        type="text"
+                        placeholder="CPF"
                         value={cpf}
                         onChange={e => setCpf(e.target.value)}
                     />
                     <input
-                        type="superior"
-                        placeholder="superior"
+                        type="text"
+                        placeholder="Superior"
                         value={superior}
                         onChange={e => setSuperior(e.target.value)}
                     />
-                    <input
-                        type="address"
-                        placeholder="address"
-                        value={address}
-                        onChange={e => setAddress(e.target.value)}
-                    />
-                    <button type="submit">Criar conta</button>
+                    <button type="submit">Continue</button>
                 </form>
             </div>
         </div>
