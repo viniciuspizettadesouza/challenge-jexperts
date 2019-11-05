@@ -22,7 +22,7 @@ A aplicação pode ser realizada em tecnologia de sua escolha (Web, Desktop, Lin
 
 ## Para rodar a aplicação
 
-Após clonar o repositório do github, por conta do arquivo .gitignore executar um dos comandos abaixo para carregar os modulos do node dentro da pasta do frontend
+Após clonar o repositório do github, executar um dos comandos abaixo para carregar os modulos do node dentro da pasta do frontend.
 
     yarn install
     ou
@@ -40,3 +40,7 @@ Dentro da pasta backend, execute o comando abaixo para subir o servidor na porta
 Para executar o frontend da aplicação:
 
 Dentro da pasta frontend, execute o comando abaixo para iniciar a aplicação na porta 3000.
+
+    yarn start
+    ou
+    npm react-script start
